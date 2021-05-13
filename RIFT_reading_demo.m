@@ -207,7 +207,7 @@ for q = 1 :4
     [~,~,~] = DrawFormattedText(window, 'Press  Any  Key  To  END trial !', 'center', 'center',cfg.TextColor,[],[],[],[],[],q_rects(q,:));
 end
 vbl = Screen('Flip', window);
-KbWait; %% waiting for key pressing
+WaitSecs(2); %% waiting for key pressing
 
 %%%%%========= frames loops in each trial
 j = 1; %% index of the frames to change the frequency table in each frame
